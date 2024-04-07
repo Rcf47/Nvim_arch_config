@@ -242,9 +242,6 @@ vim.keymap.set("n", "<M-q>", ":q<CR>", { desc = "Close window" })
 -- ; in the end
 vim.keymap.set("n", "<leader>;", "<S-$>a;<ESC>", { desc = "my snippet for ; in the end" })
 
---nvim-cmp
-vim.keymap.set("i", "<C-c>", "<cmd>lua require('cmp').close() <cr>")
-
 --codeium autocomplete
 vim.keymap.set("n", "<leader><leader>m", "<cmd>CodeiumManual<CR>", { desc = "Codeium manual" })
 vim.keymap.set("i", "<C-g>", function()
