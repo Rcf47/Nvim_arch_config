@@ -4,10 +4,36 @@ local group = vim.api.nvim_create_augroup("lsp_format_on_save", { clear = false 
 local event = "BufWritePre" -- or "BufWritePost"
 local async = event == "BufWritePost"
 
+local file_exists = function(file)
+  local f = io.open(file, "r")
+  if f ~= nil then
+    io.close(f)
+    return true
+  else
+    return false
+  end
+end
 null_ls.setup({
   sources = {
-    null_ls.builtins.formatting.stylua,
-    null_ls.builtins.diagnostics.eslint,
+    null_ls.builtins.formatting.prettierd,
+    null_ls.builtins.diagnostics.eslint_d.with({
+      diagnostics_config = {
+        virtual_text = false,
+      },
+      extra_args = function(params)
+        local file_types = { "js", "cjs", "yaml", "yml", "json" }
+        for _, file_type in pairs(file_types) do
+          if file_exists(params.root .. "/.eslintrc." .. file_type) then
+            return {}
+          end
+        end
+
+        return {
+          "--config",
+          vim.fn.expand("~/.config/eslint_d/.eslintrc.js"),
+        }
+      end,
+    }),
     null_ls.builtins.completion.spell,
   },
   on_attach = function(client, bufnr)
