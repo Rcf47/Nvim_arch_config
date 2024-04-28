@@ -266,3 +266,5 @@ vim.keymap.set("n", "<c-j>", "<c-w>j", { desc = "c-j move window down" })
 vim.keymap.set("n", "<c-h>", "<c-w>h", { desc = "c-h move window down" })
 vim.keymap.set("n", "<c-k>", "<c-w>k", { desc = "c-k move window down" })
 vim.keymap.set("n", "<c-l>", "<c-w>l", { desc = "c-l move window down" })
+
+--test
