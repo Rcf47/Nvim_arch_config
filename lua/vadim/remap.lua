@@ -257,3 +257,6 @@ end, { expr = true, silent = true })
 --vim diagnostic hide
 vim.keymap.set("n", "<leader><leader>dh", "<cmd>lua vim.diagnostic.hide()<CR>", { desc = "hide diagnostics" })
 vim.keymap.set("n", "<leader><leader>ds", "<cmd>lua vim.diagnostic.show()<CR>", { desc = "show diagnostics" })
+
+--change s as d but without register
+vim.keymap.set("n", "s", '"_d', { desc = "s as d without save register" })
