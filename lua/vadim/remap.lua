@@ -115,6 +115,36 @@ vim.keymap.set("n", "<leader>tb", "<cmd>Telescope buffers<CR>", { desc = "Telesc
 vim.keymap.set("n", "<leader>td", "<cmd>Telescope diagnostics<CR>", { desc = "Telescope diagnostics" })
 vim.keymap.set("n", "<leader>tk", "<cmd>Telescope keymaps<CR>", { desc = "Telescope keymaps" })
 
+--pathogen telescope extension
+vim.keymap.set(
+  "v",
+  "<leader>tg",
+  require("telescope").extensions["pathogen"].grep_string,
+  { desc = "pathogen grep_string" }
+)
+vim.keymap.set(
+  "n",
+  "<leader>tlg",
+  ":Telescope pathogen live_grep<CR>",
+  { silent = true, desc = "Telescope path live grep" }
+)
+vim.keymap.set("n", "<leader>tp", ":Telescope pathogen<CR>", { silent = true, desc = "Telescope pathogen" })
+vim.keymap.set(
+  "n",
+  "<leader>tf",
+  ":Telescope pathogen find_files hidden=true<CR>",
+  { silent = true, desc = "Telescope path find files" }
+)
+vim.keymap.set(
+  "n",
+  "<leader>tg",
+  ":Telescope pathogen grep_string<CR>",
+  { silent = true, desc = "Telescope path grep string" }
+)
+
+-- telescope emoji extension
+vim.keymap.set("n", "<leader>te", "<cmd>Telescope emoji<CR>", { desc = "Telescope emoji" })
+
 --gitsigns
 vim.keymap.set("n", "<leader>hn", "<cmd>Gitsigns next_hunk<CR>", { desc = "next_hunk" })
 vim.keymap.set("n", "<leader>hp", "<cmd>Gitsigns prev_hunk<CR>", { desc = "prev_hunk" })
@@ -149,36 +179,6 @@ vim.keymap.set("n", "<leader>lg", "<cmd>LazyGit<CR>", { desc = ":LazyGit" })
 
 --undotree
 vim.keymap.set("n", "<leader>u", vim.cmd.UndotreeToggle, { desc = "Undotree" })
-
---pathogen telescope extension
-vim.keymap.set(
-  "v",
-  "<leader>tg",
-  require("telescope").extensions["pathogen"].grep_string,
-  { desc = "pathogen grep_string" }
-)
-vim.keymap.set(
-  "n",
-  "<leader>tlg",
-  ":Telescope pathogen live_grep<CR>",
-  { silent = true, desc = "Telescope path live grep" }
-)
-vim.keymap.set("n", "<leader>tp", ":Telescope pathogen<CR>", { silent = true, desc = "Telescope pathogen" })
-vim.keymap.set(
-  "n",
-  "<leader>tf",
-  ":Telescope pathogen find_files hidden=true<CR>",
-  { silent = true, desc = "Telescope path find files" }
-)
-vim.keymap.set(
-  "n",
-  "<leader>tg",
-  ":Telescope pathogen grep_string<CR>",
-  { silent = true, desc = "Telescope path grep string" }
-)
-
--- telescope emoji extension
-vim.keymap.set("n", "<leader>te", "<cmd>Telescope emoji<CR>", { desc = "Telescope emoji" })
 
 --nvim-tree
 --vim.keymap.set('n', '<leader>nt', '<cmd>NvimTreeToggle<CR>', { desc = 'NvimTreeToggle' })
