@@ -114,7 +114,7 @@ vim.keymap.set("n", "<leader>dc", "<cmd>DiffviewClose<CR>", { desc = ":DiffviewC
 vim.keymap.set("n", "<leader>tb", "<cmd>Telescope buffers<CR>", { desc = "Telescope buffers" })
 vim.keymap.set("n", "<leader>td", "<cmd>Telescope diagnostics<CR>", { desc = "Telescope diagnostics" })
 vim.keymap.set("n", "<leader>tk", "<cmd>Telescope keymaps<CR>", { desc = "Telescope keymaps" })
-
+vim.keymap.set("n", "<leader>tr", "<cmd>Telescope lsp_references<CR>", { desc = "Telescope lsp references" })
 --pathogen telescope extension
 vim.keymap.set(
   "v",
