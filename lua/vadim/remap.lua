@@ -271,4 +271,4 @@ vim.keymap.set("n", "<c-l>", "<c-w>l", { desc = "c-l move window down" })
 vim.keymap.set("n", "<s-h>", "^", { desc = "h as ^ for beginning of line" })
 
 --my macros
-vim.keymap.set("n", "<leader>qa", 'df".', { desc = "delete for second quote" })
+vim.keymap.set("n", '<leader>q"', 'df".', { desc = "delete for second quote" })
