@@ -19,5 +19,6 @@ wk.register({
   ["<leader>vw"] = { name = "Workspace Symbol" },
   ["<leader>a"] = { name = "Autosave toggle" },
   ["<leader>i"] = { name = "Indent-blankline" },
+  ["<leader>q"] = { name = "My macros" },
   ["<leader><leader>d"] = { name = "Vim diagnostic" },
 })
