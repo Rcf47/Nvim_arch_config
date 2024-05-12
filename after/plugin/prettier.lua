@@ -27,7 +27,7 @@ prettier.setup({
 		jsx_single_quote = false,
 		print_width = 80,
 		prose_wrap = "preserve",
-		quote_props = "consistent",
+		quote_props = "preserve",
 		semi = true,
 		single_attribute_per_line = false,
 		single_quote = false,
