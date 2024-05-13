@@ -65,3 +65,9 @@ vim.g.codeium_no_map_tab = true
 
 --undo everytime
 vim.opt.undofile = true
+
+--list
+vim.opt.list = false
+vim.opt.listchars:append("eol:↴")
+vim.opt.listchars:append("tab:▸ ")
+vim.opt.listchars:append("space:·")
