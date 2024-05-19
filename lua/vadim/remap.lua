@@ -277,4 +277,4 @@ vim.keymap.set("n", '<leader>q"', 'df".', { desc = "delete for second quote" })
 vim.keymap.set("n", "<leader><leader><leader>l", "<cmd>set list!<CR>", { desc = "toggle list" })
 
 --terminal escape
-vim.keymap.set("t", "<esc>", "<C-\\><C-n>", { desc = "terminal escape" })
+vim.keymap.set("t", "<C-<esc>", "<C-\\><C-n>", { desc = "terminal escape" })
