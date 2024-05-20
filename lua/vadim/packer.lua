@@ -37,29 +37,29 @@ return require("packer").startup(function(use)
   use("windwp/nvim-ts-autotag")
 
   use({ "catppuccin/nvim", as = "catppuccin" })
-  use({ "hardhackerlabs/theme-vim", as = "hardhacker" })
+  --use({ "hardhackerlabs/theme-vim", as = "hardhacker" })
   use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
-  use("ThePrimeagen/harpoon")
+  --use("ThePrimeagen/harpoon")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
   use({
     "VonHeikemen/lsp-zero.nvim",
     requires = {
       -- LSP Support
-      { "neovim/nvim-lspconfig" }, -- Required
-      { "williamboman/mason.nvim" }, -- Optional
+      { "neovim/nvim-lspconfig" },             -- Required
+      { "williamboman/mason.nvim" },           -- Optional
       { "williamboman/mason-lspconfig.nvim" }, -- Optional
 
       -- Autocompletion
-      { "hrsh7th/nvim-cmp" }, -- Required
-      { "hrsh7th/cmp-nvim-lsp" }, -- Required
-      { "hrsh7th/cmp-buffer" }, -- Optional
-      { "hrsh7th/cmp-path" }, -- Optional
+      { "hrsh7th/nvim-cmp" },         -- Required
+      { "hrsh7th/cmp-nvim-lsp" },     -- Required
+      { "hrsh7th/cmp-buffer" },       -- Optional
+      { "hrsh7th/cmp-path" },         -- Optional
       { "saadparwaiz1/cmp_luasnip" }, -- Optional
-      { "hrsh7th/cmp-nvim-lua" }, -- Optional
+      { "hrsh7th/cmp-nvim-lua" },     -- Optional
 
       -- Snippets
-      { "L3MON4D3/LuaSnip" }, -- Required
+      { "L3MON4D3/LuaSnip" },             -- Required
       { "rafamadriz/friendly-snippets" }, -- Optional
     },
   })
@@ -183,6 +183,6 @@ return require("packer").startup(function(use)
     "Exafunction/codeium.vim",
   })
 
-  --bqf
+  --better quickfix
   use({ "kevinhwang91/nvim-bqf" })
 end)

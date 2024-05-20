@@ -144,16 +144,6 @@ _G.packer_plugins = {
     path = "/home/vadim/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  hardhacker = {
-    loaded = true,
-    path = "/home/vadim/.local/share/nvim/site/pack/packer/start/hardhacker",
-    url = "https://github.com/hardhackerlabs/theme-vim"
-  },
-  harpoon = {
-    loaded = true,
-    path = "/home/vadim/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/ThePrimeagen/harpoon"
-  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/vadim/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
