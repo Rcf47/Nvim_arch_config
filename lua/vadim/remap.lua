@@ -278,3 +278,11 @@ vim.keymap.set("n", "<leader><leader><leader>l", "<cmd>set list!<CR>", { desc = 
 
 --terminal escape
 vim.keymap.set("t", "<C-<esc>", "<C-\\><C-n>", { desc = "terminal escape" })
+
+--increase decrease width window
+vim.keymap.set("n", "<C-M-.>", "<cmd>vertical resize +5<CR>", { desc = "increase width window" })
+vim.keymap.set("n", "<C-M-,>", "<cmd>vertical resize -5<CR>", { desc = "decrease width window" })
+
+--increase decrease height window
+vim.keymap.set("n", "<C-M-=>", "<cmd>resize +5<CR>", { desc = "increase height window" })
+vim.keymap.set("n", "<C-M-->", "<cmd>resize -5<CR>", { desc = "decrease height window" })
