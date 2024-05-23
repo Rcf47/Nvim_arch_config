@@ -286,3 +286,8 @@ vim.keymap.set("n", "<C-M-,>", "<cmd>vertical resize -5<CR>", { desc = "decrease
 --increase decrease height window
 vim.keymap.set("n", "<C-M-=>", "<cmd>resize +5<CR>", { desc = "increase height window" })
 vim.keymap.set("n", "<C-M-->", "<cmd>resize -5<CR>", { desc = "decrease height window" })
+
+--inlay hint enable for function from 0.10.0 neovim
+vim.keymap.set("n", "<leader><leader>i", function()
+  vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
+end, { desc = "inlay hint enable" })
