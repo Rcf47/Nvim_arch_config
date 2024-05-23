@@ -107,8 +107,17 @@ const {} = async ({}) => {{
   )
 )
 
+local cv = snippet({ trig = "cv", regTrig = true }, fmt("const {} = {};", { i(1), i(2) }))
+
+local lv = snippet({ trig = "lv", regTrig = true }, fmt("let {} = {};", { i(1), i(2) }))
+
+local cl = snippet({ trig = "cl", regTrig = true }, fmt("console.log({});", { i(1) }))
+
 table.insert(snippets, tryca)
 table.insert(snippets, afa1)
 table.insert(snippets, cafa1)
+table.insert(snippets, cv)
+table.insert(snippets, lv)
+table.insert(snippets, cl)
 
 return snippets, autosnippets
