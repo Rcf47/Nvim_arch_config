@@ -28,8 +28,16 @@ local kind_icons = {
 local cmp = require("cmp")
 cmp.setup({
   completion = {
-    winhighlight = "Normal:Pmenu,FloatBorder:None,Search:None",
+    winhighlight = "Normal:Pmenu,FloatBorder:None,Search:None,",
     async = true,
+  },
+  window = {
+    completion = {
+      border = "rounded",
+    },
+    documentation = {
+      border = "rounded",
+    },
   },
   formatting = {
     format = function(entry, vim_item)
