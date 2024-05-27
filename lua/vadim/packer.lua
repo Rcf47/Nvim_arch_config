@@ -185,4 +185,7 @@ return require("packer").startup(function(use)
 
   --better quickfix
   use({ "kevinhwang91/nvim-bqf" })
+
+  --trouble
+  use({ "folke/trouble.nvim" })
 end)
