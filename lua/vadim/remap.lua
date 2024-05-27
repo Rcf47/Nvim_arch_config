@@ -291,3 +291,6 @@ vim.keymap.set("n", "<C-M-->", "<cmd>resize -5<CR>", { desc = "decrease height w
 vim.keymap.set("n", "<leader><leader>i", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled())
 end, { desc = "inlay hint enable" })
+
+--trouble toggle
+vim.keymap.set("n", "<leader>tt", "<cmd>TroubleToggle<CR>", { desc = "toggle trouble" })
