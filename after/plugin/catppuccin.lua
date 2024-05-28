@@ -24,8 +24,6 @@ catppuccin.setup({
   },
 })
 
-vim.cmd.colorscheme("catppuccin")
-
 -- local base1 = "#2D3145"
 
 local colors = require("catppuccin.palettes").get_palette()
