@@ -35,3 +35,4 @@ require("catppuccin.lib.highlighter").syntax({
   Pmenu = { bg = colors.surface0 },
   --FloatBorder = { fg = colors.surface0, bg = colors.surface0 },
 })
+vim.cmd.colorscheme("catppuccin")
