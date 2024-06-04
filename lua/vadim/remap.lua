@@ -294,3 +294,6 @@ end, { desc = "inlay hint enable" })
 
 --trouble toggle
 vim.keymap.set("n", "<leader>tt", "<cmd>TroubleToggle<CR>", { desc = "toggle trouble" })
+
+--full path to file
+vim.keymap.set("n", "<leader><leader><leader>p", "<cmd>echo expand('%:p')<CR>", { desc = "full path to file" })
