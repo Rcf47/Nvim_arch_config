@@ -188,4 +188,7 @@ return require("packer").startup(function(use)
 
   --trouble
   use({ "folke/trouble.nvim" })
+
+  --mini ai for better dif
+  use({ "echasnovski/mini.ai" })
 end)
