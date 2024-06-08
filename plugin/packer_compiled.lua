@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/vadim/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  hardhacker = {
+    loaded = true,
+    path = "/home/vadim/.local/share/nvim/site/pack/packer/start/hardhacker",
+    url = "https://github.com/hardhackerlabs/theme-vim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/vadim/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -343,6 +348,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/vadim/.local/share/nvim/site/pack/packer/start/treesj",
     url = "https://github.com/Wansmer/treesj"
+  },
+  ["trouble.nvim"] = {
+    loaded = true,
+    path = "/home/vadim/.local/share/nvim/site/pack/packer/start/trouble.nvim",
+    url = "https://github.com/folke/trouble.nvim"
   },
   undotree = {
     loaded = true,
