@@ -194,4 +194,7 @@ return require("packer").startup(function(use)
 
   -- for java lsp
   use("mfussenegger/nvim-jdtls")
+
+  -- colorscheme Tokyo night
+  use({ "folke/tokyonight.nvim" })
 end)
