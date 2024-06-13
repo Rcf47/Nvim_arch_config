@@ -191,4 +191,7 @@ return require("packer").startup(function(use)
 
   --mini ai for better dif
   use({ "echasnovski/mini.ai" })
+
+  -- for java lsp
+  use("mfussenegger/nvim-jdtls")
 end)
