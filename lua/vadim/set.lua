@@ -71,3 +71,5 @@ vim.opt.list = false
 vim.opt.listchars:append("eol:↴")
 vim.opt.listchars:append("tab:▸ ")
 vim.opt.listchars:append("space:·")
+
+--vim.cmd.colorscheme("tokyonight-night")
