@@ -39,7 +39,7 @@ vim.keymap.set({ "i", "s" }, "<c-n>", function()
     ls.expand_or_jump()
   end
 end, { silent = true })
-vim.keymap.set({ "i" }, "<C-K>", function()
+vim.keymap.set({ "i" }, "<C-k>", function()
   ls.expand()
 end, { silent = true })
 
