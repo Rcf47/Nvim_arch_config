@@ -46,20 +46,20 @@ return require("packer").startup(function(use)
     "VonHeikemen/lsp-zero.nvim",
     requires = {
       -- LSP Support
-      { "neovim/nvim-lspconfig" },             -- Required
-      { "williamboman/mason.nvim" },           -- Optional
+      { "neovim/nvim-lspconfig" }, -- Required
+      { "williamboman/mason.nvim" }, -- Optional
       { "williamboman/mason-lspconfig.nvim" }, -- Optional
 
       -- Autocompletion
-      { "hrsh7th/nvim-cmp" },         -- Required
-      { "hrsh7th/cmp-nvim-lsp" },     -- Required
-      { "hrsh7th/cmp-buffer" },       -- Optional
-      { "hrsh7th/cmp-path" },         -- Optional
+      { "hrsh7th/nvim-cmp" }, -- Required
+      { "hrsh7th/cmp-nvim-lsp" }, -- Required
+      { "hrsh7th/cmp-buffer" }, -- Optional
+      { "hrsh7th/cmp-path" }, -- Optional
       { "saadparwaiz1/cmp_luasnip" }, -- Optional
-      { "hrsh7th/cmp-nvim-lua" },     -- Optional
+      { "hrsh7th/cmp-nvim-lua" }, -- Optional
 
       -- Snippets
-      { "L3MON4D3/LuaSnip" },             -- Required
+      { "L3MON4D3/LuaSnip" }, -- Required
       { "rafamadriz/friendly-snippets" }, -- Optional
     },
   })
@@ -161,6 +161,18 @@ return require("packer").startup(function(use)
     "iamcco/markdown-preview.nvim",
     run = function()
       vim.fn["mkdp#util#install"]()
+    end,
+  })
+
+  --render-makrdown
+  use({
+    "MeanderingProgrammer/render-markdown.nvim",
+    after = { "nvim-treesitter" },
+    --requires = { 'echasnovski/mini.nvim', opt = true }, -- if you use the mini.nvim suite
+    -- requires = { 'echasnovski/mini.icons', opt = true }, -- if you use standalone mini plugins
+    requires = { "nvim-tree/nvim-web-devicons", opt = true }, -- if you prefer nvim-web-devicons
+    config = function()
+      require("render-markdown").setup({})
     end,
   })
 
