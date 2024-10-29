@@ -297,3 +297,6 @@ vim.keymap.set("n", "<leader>tt", "<cmd>TroubleToggle<CR>", { desc = "toggle tro
 
 --full path to file
 vim.keymap.set("n", "<leader><leader><leader>p", "<cmd>echo expand('%:p')<CR>", { desc = "full path to file" })
+
+--copy all document
+vim.keymap.set("n", "<S-y>", "<cmd>%y<CR>", { desc = "copy all document" })
