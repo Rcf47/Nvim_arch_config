@@ -66,6 +66,11 @@ return require("packer").startup(function(use)
   use("williamboman/mason.nvim")
 
   use("lukas-reineke/lsp-format.nvim")
+  --use("tpope/vim-surround")
+  use({
+    "kylechui/nvim-surround",
+    tag = "*", -- Use for stability; omit to use `main` branch for the latest features
+  })
 
   --Debug adapter protocol
   use("mfussenegger/nvim-dap")
