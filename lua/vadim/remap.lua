@@ -272,6 +272,7 @@ vim.keymap.set("n", "<s-h>", "^", { desc = "h as ^ for beginning of line" })
 
 --my macros
 vim.keymap.set("n", '<leader>d"', 'df".', { desc = "delete for second quote" })
+vim.keymap.set("n", '<leader>y"', 'y2f"', { desc = "yank for second quote" })
 
 --toggle list
 vim.keymap.set("n", "<leader><leader><leader>l", "<cmd>set list!<CR>", { desc = "toggle list" })
