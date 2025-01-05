@@ -261,6 +261,9 @@ vim.keymap.set("n", "<leader><leader>ds", "<cmd>lua vim.diagnostic.show()<CR>", 
 --change s as d but without register delete without save register
 vim.keymap.set("n", ";", '"_d', { desc = "s as d without save register" })
 
+--x but without save register
+vim.keymap.set("n", "<M-x>", '"_x', { desc = "x but without save register" })
+
 --c-j c-h c-k c-l with windows
 vim.keymap.set("n", "<m-j>", "<c-w>j", { desc = "c-j move window down" })
 vim.keymap.set("n", "<m-h>", "<c-w>h", { desc = "c-h move window down" })
