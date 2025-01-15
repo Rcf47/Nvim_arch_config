@@ -37,6 +37,11 @@ telescope.setup({
       },
     },
   },
+  pickers = {
+    find_files = {
+      hidden = true,
+    },
+  },
   extensions = {
     file_browser = {
       theme = "dropdown",
