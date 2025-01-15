@@ -124,7 +124,7 @@ vim.keymap.set(
 )
 vim.keymap.set(
   "n",
-  "<leader>tlg",
+  "<leader>tll",
   ":Telescope pathogen live_grep<CR>",
   { silent = true, desc = "Telescope path live grep" }
 )
