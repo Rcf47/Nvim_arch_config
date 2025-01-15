@@ -12,6 +12,7 @@ end
 local actions = require("telescope.actions")
 
 local fb_actions = require("telescope").extensions.file_browser.actions
+local lga_actions = require("telescope-live-grep-args.actions")
 
 local function telescope_buffer_dir()
   return vim.fn.expand("%:p:h")
@@ -43,6 +44,23 @@ telescope.setup({
     },
   },
   extensions = {
+    live_grep_args = {
+      auto_quoting = true, -- enable/disable auto-quoting
+      -- define mappings, e.g.
+      mappings = {         -- extend mappings
+        i = {
+          ["<C-k>"] = lga_actions.quote_prompt(),
+          ["<C-i>"] = lga_actions.quote_prompt({ postfix = " -i " }),
+          ["<C-.>"] = lga_actions.quote_prompt({ postfix = " -. " }),
+          -- freeze the current list and start a fuzzy search in the frozen list
+          ["<C-space>"] = actions.to_fuzzy_refine,
+        },
+      },
+      -- ... also accepts theme settings, for example:
+      -- theme = "dropdown", -- use dropdown theme
+      -- theme = { }, -- use own theme spec
+      -- layout_config = { mirror=true }, -- mirror preview pane
+    },
     file_browser = {
       theme = "dropdown",
       -- disables netrw and use telescope-file-browser in its place
@@ -86,6 +104,7 @@ telescope.load_extension("lazygit")
 telescope.load_extension("pathogen")
 telescope.load_extension("fzf")
 telescope.load_extension("emoji")
+telescope.load_extension("live_grep_args")
 
 local base1 = "#2D3145"
 local base2 = "#32364A"
