@@ -110,6 +110,12 @@ vim.keymap.set("n", "<leader>tn", function()
   })
 end, { desc = "Telescope file browser" })
 
+vim.keymap.set(
+  "n",
+  "<leader>tlg",
+  ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
+  { desc = "Telescope live grep args" }
+)
 telescope.load_extension("lazygit")
 telescope.load_extension("pathogen")
 telescope.load_extension("fzf")
