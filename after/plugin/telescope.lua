@@ -13,6 +13,7 @@ local actions = require("telescope.actions")
 
 local fb_actions = require("telescope").extensions.file_browser.actions
 local lga_actions = require("telescope-live-grep-args.actions")
+local live_grep_args_shortcuts = require("telescope-live-grep-args.shortcuts")
 
 local function telescope_buffer_dir()
   return vim.fn.expand("%:p:h")
@@ -116,6 +117,14 @@ vim.keymap.set(
   ":lua require('telescope').extensions.live_grep_args.live_grep_args()<CR>",
   { desc = "Telescope live grep args" }
 )
+
+vim.keymap.set(
+  "n",
+  "<leader>tlc",
+  live_grep_args_shortcuts.grep_word_under_cursor,
+  { desc = "Telescop live grep args under cursor" }
+)
+
 telescope.load_extension("lazygit")
 telescope.load_extension("pathogen")
 telescope.load_extension("fzf")
