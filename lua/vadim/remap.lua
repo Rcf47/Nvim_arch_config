@@ -89,7 +89,7 @@ vim.keymap.set("n", "<leader>de", function()
   require("dapui").eval()
 end, { desc = "dapui eval(calculate) expression" })
 --debugging dap-ui
-vim.keymap.set("n", "<leader>o", "<cmd>lua require('dapui').toggle() <CR>", { desc = "toggle dapui" })
+vim.keymap.set("n", "<leader><leader>o", "<cmd>lua require('dapui').toggle() <CR>", { desc = "toggle dapui" })
 
 -- Increment/decrement
 vim.keymap.set("n", "+", "<C-a>", { desc = "increment" })
@@ -197,7 +197,7 @@ vim.keymap.set("n", "<leader><leader>s", "^", { desc = "start of the line" })
 vim.keymap.set("n", "<leader><leader>e", "$", { desc = "end of the line" })
 
 --oil open
-vim.keymap.set("n", "<leader><leader>o", "<cmd>Oil<CR>", { desc = "open oil file explorer" })
+vim.keymap.set("n", "<leader>o", "<cmd>Oil<CR>", { desc = "open oil file explorer" })
 
 --spliting joining blocks treesj
 vim.keymap.set("n", "<leader><leader>t", "<cmd>TSJToggle<CR>", { desc = "Spliting joining blocks" })
