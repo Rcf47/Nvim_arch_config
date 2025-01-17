@@ -230,4 +230,7 @@ return require("packer").startup(function(use)
   --     "3rd/image.nvim",              -- Optional image support in preview window: See `# Preview Mode` for more information
   --   },
   -- })
+
+  -- telescope tabs
+  use({ "LukasPietzschmann/telescope-tabs", requires = { "nvim-telescope/telescope.nvim" } })
 end)
