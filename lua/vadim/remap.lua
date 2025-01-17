@@ -115,6 +115,7 @@ vim.keymap.set("n", "<leader>tb", "<cmd>Telescope buffers<CR>", { desc = "Telesc
 vim.keymap.set("n", "<leader>td", "<cmd>Telescope diagnostics<CR>", { desc = "Telescope diagnostics" })
 vim.keymap.set("n", "<leader>tk", "<cmd>Telescope keymaps<CR>", { desc = "Telescope keymaps" })
 vim.keymap.set("n", "<leader>tr", "<cmd>Telescope lsp_references<CR>", { desc = "Telescope lsp references" })
+vim.keymap.set("n", "<leader>tt", "<cmd>Telescope telescope-tabs list_tabs<CR>", { desc = "Telescope list tabs" })
 --pathogen telescope extension
 vim.keymap.set(
   "v",
