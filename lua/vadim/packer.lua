@@ -233,4 +233,7 @@ return require("packer").startup(function(use)
 
   -- telescope tabs
   use({ "LukasPietzschmann/telescope-tabs", requires = { "nvim-telescope/telescope.nvim" } })
+
+  --for telescope layout nui.nvim
+  use({ "MunifTanjim/nui.nvim" })
 end)
