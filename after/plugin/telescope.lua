@@ -53,6 +53,13 @@ telescope.setup({
     find_files = {
       hidden = true,
     },
+    buffers = {
+      mappings = {
+        i = {
+          ["<c-d>"] = actions.delete_buffer + actions.move_to_top,
+        },
+      },
+    },
   },
   extensions = {
     live_grep_args = {
