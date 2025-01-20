@@ -14,6 +14,7 @@ local actions = require("telescope.actions")
 local fb_actions = require("telescope").extensions.file_browser.actions
 local lga_actions = require("telescope-live-grep-args.actions")
 local live_grep_args_shortcuts = require("telescope-live-grep-args.shortcuts")
+local action_layout = require("telescope.actions.layout")
 
 local function telescope_buffer_dir()
   return vim.fn.expand("%:p:h")
@@ -46,6 +47,10 @@ telescope.setup({
     mappings = {
       n = {
         ["q"] = actions.close,
+        ["<M-p"] = action_layout.toggle_preview,
+      },
+      i = {
+        ["<M-p>"] = action_layout.toggle_preview,
       },
     },
   },
