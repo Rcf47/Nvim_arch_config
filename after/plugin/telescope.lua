@@ -43,14 +43,14 @@ telescope.setup({
     layout_config = {
       horizontal = {
         size = {
-          width = "90%",
-          height = "90%",
+          width = "100%",
+          height = "100%",
         },
       },
       vertical = {
         size = {
-          width = "90%",
-          height = "90%",
+          width = "100%",
+          height = "100%",
         },
       },
     },
@@ -179,8 +179,8 @@ telescope.setup({
           Layout.Box({
             Layout.Box(results, { grow = 1 }),
             Layout.Box(prompt, { size = 3 }),
-          }, { dir = "col", size = "50%" }),
-          Layout.Box(preview, { size = "50%" }),
+          }, { dir = "col", size = "60%" }),
+          Layout.Box(preview, { size = "40%" }),
         }, { dir = "row" }),
         minimal = Layout.Box({
           Layout.Box(results, { grow = 1 }),
@@ -270,10 +270,10 @@ telescope.setup({
   mappings = {
     n = {
       ["q"] = actions.close,
-      ["<M-p"] = action_layout.toggle_preview,
+      ["<M-t"] = action_layout.toggle_preview,
     },
     i = {
-      ["<M-p>"] = action_layout.toggle_preview,
+      ["<M-t>"] = action_layout.toggle_preview,
     },
   },
 
